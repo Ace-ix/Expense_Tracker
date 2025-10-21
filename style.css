@@ -56,6 +56,7 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 30px;
+    border-radius: 20px;
 }
 #remove {
     background-color: red;
@@ -64,4 +65,21 @@ table, th, td {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+#remove:hover {
+    background-color: darkred;
+}
+@media (max-width:600px) {
+    .manager {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    table,th,td {
+        font-size: large;
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding:5px ;
+    }
 }
