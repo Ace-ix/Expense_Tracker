@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Expense Tracker</h1>
+    <div class="details">
+        <form class="manager" id="expenseForm">
+            <label for="Date">Select Date:</label>
+            <input type="date" id="Date">
+            <label for="item">Item:</label>
+            <input type="text" id="item" placeholder="Enter item">            
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">            
+            <label for="Type">Transaction Type:</label>
+            <select id="Type">
+                <option id="in" value="cashIn">Cash In</option>
+                <option id='out 'value="cashOut">Cash Out</option>
+            </select>
+            <button type="submit" onclick="addItem()">Add Expense</button>            
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Item</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="track.js" ></script>
+</body>
+</html>
