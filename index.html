@@ -21,6 +21,13 @@
                 <option id="in" value="cashIn">Cash In</option>
                 <option id='out 'value="cashOut">Cash Out</option>
             </select>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option id="Food">Food</option>
+                <option id="Travel">Travel</option>
+                <option id="Health">Health</option>
+                <option id="other">Other</option>
+            </select>
             <button type="submit" onclick="addItem()">Add Expense</button>            
         </form>
         <div id="table">
@@ -30,7 +37,8 @@
                         <th>Date</th>
                         <th>Item</th>
                         <th>Amount</th>
-                        <th>Type</th>
+                        <th>Category</th>
+                        <th>Transaction Type</th>
                         <th>Remove</th>
                     </tr>
                 </thead>
